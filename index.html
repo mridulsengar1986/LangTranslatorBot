@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Translator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="Top_container">
+            <img src="./imgs/parrot.png" alt="parrot" class="parrot">
+            <div class="text">
+                <h1 class="title">PollyGlot</h1>
+                <p class="subtitle">This is the subtitle below the big title.</p>
+            </div>
+        </div>
+        <div class="second_container">
+            <h2>Text to translate 👇</h2>
+<textarea id="textToTranslate" placeholder="Enter your text here...">How are you?</textarea>
+
+            <h3>Select language 👇</h3>
+            <div class="language-options">
+                <label>
+                    <input type="radio" name="language" value="french" checked> French <img src="./imgs/fr-flag.png" />
+                </label>
+                <label>
+                    <input type="radio" name="language" value="spanish"> Spanish <img src="./imgs/sp-flag.png" />
+                </label>
+                <label>
+                    <input type="radio" name="language" value="japanese"> Japanese <img src="./imgs/jpn-flag.png" />
+                </label>
+            </div>
+
+            <button id="translateButton" onclick="translateText()">Translate</button>
+            <div id="chatContainer" class="chat-container"></div>
+
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+

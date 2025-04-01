@@ -1,0 +1,133 @@
+.container
+{
+    width: 100%;
+    max-width: 390px;
+    height: 100vh;
+    margin: 0 auto;
+    border: 2px solid #ccc;
+    background-color: #f0f0f0;
+    overflow-y: auto;
+}
+
+
+.Top_container {
+    width: 390px;
+    height: 213px;
+    background-image: url('./imgs/worldmap.png');
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 20px; /* Space between image and title */
+   
+}
+.text {
+    display: flex;
+    flex-direction: column; /* Stack title and subtitle vertically */
+}
+
+
+.parrot {
+    width: 94.8px;
+    height: 84.8px;
+    object-fit: cover; /* Prevent distortion */
+}
+
+.title {
+    width: 138px;
+    height: 65px;
+    color: green;
+    font-size: 48px;
+   margin:0;
+}
+
+.subtitle {
+   
+    color: white;
+    font-size: 18px;
+    margin:0;
+}
+
+
+.second_container {
+    width: 350px;
+    height: 550px; /* was 510px, gives more space for chat */
+    background-color: white;
+    border-radius: 12px;
+    border: 2px solid black;
+    text-align: center;
+    margin: 20px auto;
+    overflow-y: auto; /* Helps scroll inside */
+}
+
+textarea {
+    width: 90%;
+    height: 80px;
+    margin: 10px 0;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.language-options {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    font: 900;
+    font-size: larger;
+    gap: 15px; /* Space between radio buttons */
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 20px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+#outputText {
+    margin-top: 20px;
+    padding: 10px;
+    background: #e7e7e7;
+    border: 2px solid black;
+    border-radius: 4px;
+    min-height: 50px;
+}
+h2,h3{
+color:blue;
+
+}
+.chat-container {
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.user-message, .bot-message {
+    max-width: 70%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 12px;
+    font-family: sans-serif;
+}
+
+.user-message {
+    background-color: #d1e7dd;
+    text-align: right;
+    margin-left: auto;
+}
+
+.bot-message {
+    background-color: #e2e3e5;
+    text-align: left;
+    margin-right: auto;
+}
+
